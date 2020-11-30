@@ -1,0 +1,604 @@
+/**************************************************************
+        Start of General Classes to be used for styling
+**************************************************************/
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #24292e;
+    background-color: #fff;
+}
+
+.cent-content-vertically > * {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.hide {
+    display: none;
+}
+
+.text-grey {
+    color: #586069;
+}
+/**************************************************************
+        End of General Classes to be used for styling
+**************************************************************/
+
+/**************************************************************
+       Start of Main Header Styling
+**************************************************************/
+.header-grid {
+    padding: 0 35px;
+}
+
+.main-header {
+    background: #000;
+    /* color: white; */
+    height: 60px;
+}
+
+.left-header-group > *,
+.left-header-group nav li,
+.right-header-group > div {
+    margin-right: 15px;
+}
+
+.left-header-group {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.left-header-group label {
+    display: inline-block;
+    /* height: 35px; */
+    /* border: 1px solid white; */
+}
+
+.right-header-group > div.double-icons > *:first-child {
+    margin-right: 3px;
+}
+
+.double-icons {
+    /* border: 1px solid white; */
+}
+
+.icon-arrow {
+    padding-top: 23%;
+}
+.repos-section .icon-arrow {
+    padding-top: 60%;
+}
+
+.search-container {
+    width: 270px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #343B42;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: rgba(136, 118, 107, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+}
+
+.search-container input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #AEC9CB;
+    opacity: 1; /* Firefox */
+}
+
+.search-container input.repos-search {
+    width: 100%;
+    padding-left: 12px;
+    background-color: transparent;
+    height: 100%;
+    border: none;
+}
+
+.search-container::after {
+    content: url(https://github.githubassets.com/images/search-key-slash.svg);
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+/**************************************************************
+       End of Main Header Styling
+**************************************************************/
+
+
+/**************************************************************
+       Start of Pages Header Styling
+**************************************************************/
+.grid {
+    max-width: 1250px;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.grid > * {
+    /* border: 1px solid green; */
+}
+
+.profile-summary,
+.account-details {
+    margin-top: 35px;
+}
+
+.profile-summary {
+    width: 24%;
+    box-sizing: border-box;
+    padding-right: 2%;
+    flex-shrink: 1;
+    z-index: 10;
+}
+
+.image-div {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-div img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.user-full-name {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.25;
+    color: #24292e;
+    font-weight: 600;
+}
+
+.user-full-name span:first-child {
+    margin-right: 5px;
+}
+
+.user-nickname {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.bio {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.account-details {
+    flex: 1;
+    flex-basis: auto;
+}
+
+.page-header {
+    width: fit-content;
+
+
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 135px;
+    width: 100vw;
+    border-bottom: 1px solid #e1e4e8;
+    /* padding: 0 150px; */
+}
+
+.page-header a.page-title {
+    padding: 10px 15px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: #24292e;
+    text-decoration: inherit; /* no underline */
+}
+
+.page-header a:hover {
+    border-bottom: 2.2px solid #e1e4e8;
+    /* transition: border-bottom-color .36s ease-in; */
+}
+
+.page-header a.active {
+    border-bottom: 2px solid #f9826c;
+    outline: 1px dotted transparent;
+    outline-offset: -1px;
+}
+
+.page-header .icon {
+    fill: #959DA5;
+}
+
+.page-header .active .icon {
+    fill: #3F4347;
+}
+
+.page-title .title {
+    margin-left: 8px;;
+}
+
+.page-header h3 {
+    margin-top: -3.2px;
+    font-family: inherit;
+    font-style: "normal";
+    font-weight: 400;
+    font-size: 14px;
+    color: inherit;
+    height: 18px;
+}
+
+.repos-section span.new-repo {
+    display: inline-block;
+    margin-top: -1.5px !important;
+}
+
+.page-header .active h3 {
+    font-weight: 600;
+}
+
+.page-header .active,
+.page-header .active * {
+    /* border: 1px solid black; */
+}
+
+.page-header .active .count {
+    font-family: inherit;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: -1.75px;
+    /* min-width: 20px; */
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 2em;
+    border: 1px solid transparent;
+    background-color: rgba(209, 213, 218, 0.5);
+}
+
+.sub-header {
+    /* border: 1px solid black; */
+}
+
+.sub-header > a {
+    /* border: 1px solid green; */
+}
+/**************************************************************
+       End of Pages Header Styling
+**************************************************************/
+
+/**************************************************************
+       Start of Find Repos / New Repo Styling
+**************************************************************/
+.repos-section {
+    padding: 15px 0;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.find-repos {
+    flex: 1;
+    /* flex-basis: auto; */
+    /* border: 1px solid black; */
+    margin-right: 15px;
+}
+
+.find-repos > * {
+    /* border-radius: 5px;
+    padding: 5px; */
+}
+
+.find-repos input.find-repo {
+    flex: 1;
+    margin-right: 15px;
+
+}
+
+.repos-find-btn {
+    position: relative;
+}
+
+.repos-find-btn:first-of-type {
+    margin-right: 5px;
+}
+
+.select-options {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: green;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.select-options > header:first-child,
+.selectMenu-item {
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.select-options > *:not(:last-child),
+.selectMenu-item:not(:last-child) {
+    border-bottom: 1px solid #646060;
+}
+
+.repos-section {
+}
+
+.selectMenu-item {
+    cursor: pointer;
+}
+
+.selectMenu-item:hover {
+    background: #e1e4e8;
+}
+
+.select-menu-icon {
+    margin-right: 5px;
+    width: 20px;
+    /* border: 1px solid black; */
+}
+
+.repos-section {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-style: normal;
+    font-weight: 600;
+    font-size:  12px;
+    line-height: 18px;
+    color: #24292e
+}
+
+
+.repos-section input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #82737D;
+    opacity: 1; /* Firefox */
+}
+
+.repos-section input {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: inset 0 1px 0 rgba(225, 228, 232, 0.2);
+}
+
+.find-repos summary.filter {
+    position: relative;
+
+}
+
+.find-repos summary.filter::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    top: -3px;
+    left: -5px;
+    z-index: 100;
+}
+
+.find-repos button.filter {
+    margin-left: -13px;
+    z-index: 1000;
+}
+
+.repos-section a .svg-div {
+    margin-right: 5px;
+}
+
+.find-repos .svg-div {
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.find-repos button.filter:hover,
+.star-btn:hover {
+    background: #e1e4e8;
+}
+
+.repos-section a.button {
+    background-color: #2ea44f;
+    /* padding: 10px 15px; */
+    font-family: inherit;
+    /* font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
+    color: #fff;
+    text-decoration: inherit; /* no underline */
+}
+
+.repos-section a.button:hover {
+    background-color: #2C974B;
+}
+
+.find-repos button.filter:focus {
+    outline: 0 none;
+}
+
+.find-repos i.select-type {
+    font-style: normal;
+    font-weight: 500;
+    opacity: .75;
+}
+
+a.button,
+.btn {
+    /* position: relative; */
+    /* display: inline-block; */
+    font-family: inherit;
+    color: #24292e;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.btn-sm {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 3px 12px;
+}
+
+.repo-item {
+    padding: 30px 0;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.repo-header {
+    margin-bottom: 4px;
+}
+
+a.repo-name {
+    color: #0366d6;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+a.repo-name:hover {
+    text-decoration: underline;
+}
+
+a.repo-name:active, a.repo-name:hover {
+    outline-width: 0;
+}
+
+.repo-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #586069;
+    line-height: 18px;
+    margin-left: 4px;
+    padding: 0px 7px;
+    border-radius: 2em;
+    border: 1px solid #e1e4e8;
+    vertical-align: middle;
+}
+
+.repo-footer {
+    margin-top: 13px;
+    font-size: 12px;
+}
+
+.repo-footer > * {
+    margin-right: 20px;
+}
+
+.repo-language-name {
+    font-size: 12px;
+}
+
+.repo-language-color {
+    position: relative;
+    top: 0.75px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.repo-footer a.repo-link {
+    text-decoration: inherit;
+    color: #6a737d;
+
+}
+
+.repo-footer a svg {
+    fill: #6a737d;
+    margin-top: 0.75px;
+    margin-right: 3px;
+
+}
+
+.repo-link a.repo-link p {
+    /* text-decoration: inherit; */
+}
+
+.repo-footer a.repo-link:hover svg {
+    fill: #0366d6;
+}
+
+.last-updated {
+}
+
+.star-btn .svg-div {
+    margin-right: 5px;
+}
+
+.star-btn span.text {
+    color: #24292e;
+}
+
+.star-btn .svg-div svg {
+    stroke: #6a737d;
+    stroke-width: 1.5px;
+    fill: none;
+}
+
+
+.html-color {
+    background-color: #e34c26;
+    
+}
+
+.css-color {
+    background-color: #563d7c;
+}
+
+.javascript-color {
+    background-color: #f1e05a;
+}
+
+.shell-color {
+    background-color: #89e051;
+}
